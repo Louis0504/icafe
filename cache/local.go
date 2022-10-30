@@ -9,7 +9,7 @@ import (
 
 	"github.com/bluele/gcache"
 	//"github.com/astaxie/beego"
-	"github.com/snowmetas/cafe-go/util"
+	"github.com/ymetas/cafe-go/util"
 )
 
 func recursiveIndirectType(p reflect.Type) reflect.Type {

@@ -1,4 +1,4 @@
-module github.com/snowmetas/cafe-go
+module github.com/ymetas/cafe-go
 
 go 1.18
 

@@ -1,4 +1,4 @@
-package box
+package server
 
 type appConfig struct {
 	// log monitor

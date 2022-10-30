@@ -1,9 +1,9 @@
-package box
+package server
 
 import (
 	"context"
 	"fmt"
-	"github.com/snowmetas/cafe-go/utils"
+	"github.com/ymetas/cafe-go/utils"
 )
 
 func RunUntilError(ctx context.Context, fns []func(ctx context.Context) error) error {

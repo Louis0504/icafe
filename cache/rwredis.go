@@ -7,8 +7,8 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"github.com/snowmetas/cafe-go/redis"
-	"github.com/snowmetas/cafe-go/util"
+	"github.com/ymetas/cafe-go/redis"
+	"github.com/ymetas/cafe-go/util"
 	"reflect"
 	"time"
 )

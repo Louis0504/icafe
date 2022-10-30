@@ -1,11 +1,11 @@
-package box
+package server
 
 import (
 	"context"
-	"github.com/snowmetas/cafe-go/utils"
+	"github.com/ymetas/cafe-go/utils"
 	"sync"
 
-	"github.com/snowmetas/cafe-go/log"
+	"github.com/ymetas/cafe-go/log"
 )
 
 type Bundle interface {

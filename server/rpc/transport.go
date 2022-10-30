@@ -15,9 +15,9 @@ const (
 
 func newTransport(ctx context.Context, client *http.Client, targetURL string, serviceName, method string, headers map[string]string) thrift.TTransport {
 	customHeaders := http.Header{
-		"X-ZONE-API":           []string{serviceName + "." + method},
-		"X-ZONE-ORIGIN":        []string{"ZvideoService"},
-		"X-ZONE-ORIGIN-APP":    []string{"zvideo"},
+		"X-ZONE-API":        []string{serviceName + "." + method},
+		"X-ZONE-ORIGIN":     []string{"ZvideoService"},
+		"X-ZONE-ORIGIN-APP": []string{"zvideo"},
 	}
 
 	for k, v := range headers {

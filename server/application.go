@@ -1,12 +1,12 @@
-package box
+package server
 
 import (
 	"context"
 	"fmt"
 	"net/http"
 
-	"github.com/snowmetas/cafe-go/log"
-	"github.com/snowmetas/cafe-go/utils"
+	"github.com/ymetas/cafe-go/log"
+	"github.com/ymetas/cafe-go/utils"
 	//nolint:gosec
 	_ "net/http/pprof"
 	"os"

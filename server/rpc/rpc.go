@@ -2,11 +2,10 @@ package rpc
 
 import (
 	"context"
-	"github.com/snowmetas/cafe-go/box"
-	"net/http"
-
 	"github.com/apache/thrift/lib/go/thrift"
-	"github.com/snowmetas/cafe-go/log"
+	"github.com/ymetas/cafe-go/log"
+	"github.com/ymetas/cafe-go/server"
+	"net/http"
 )
 
 type TRPCBundle struct {
@@ -18,7 +17,7 @@ type TRPCBundle struct {
 	extraMiddlewares []func(http.Handler) http.Handler
 }
 
-func NewTRPCBundle(name string, opts ...TRPCOption) box.Bundle {
+func NewTRPCBundle(name string, opts ...TRPCOption) server.Bundle {
 	defaults := getDefaults()
 	s := &TRPCBundle{
 		name:       name,

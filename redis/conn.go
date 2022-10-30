@@ -3,7 +3,7 @@ package redis
 import (
 	"context"
 	"github.com/gomodule/redigo/redis"
-	"github.com/snowmetas/cafe-go/log"
+	"github.com/ymetas/cafe-go/log"
 	"io"
 	"net"
 	"syscall"
