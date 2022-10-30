@@ -1,0 +1,113 @@
+package redis
+
+import (
+	"strings"
+)
+
+var idempotentCommands = map[string]struct{}{
+	"DEL":       {},
+	"EXISTS":    {},
+	"EXPIRE":    {},
+	"EXPIREAT":  {},
+	"GET":       {},
+	"GETBIT":    {},
+	"GETRANGE":  {},
+	"HDEL":      {},
+	"HEXISTS":   {},
+	"HGET":      {},
+	"HGETALL":   {},
+	"HLEN":      {},
+	"HMGET":     {},
+	"HMSET":     {},
+	"HSET":      {},
+	"HSETNX":    {},
+	"HSTRLEN":   {},
+	"MGET":      {},
+	"MSET":      {},
+	"MSETNX":    {},
+	"SCARD":     {},
+	"SET":       {},
+	"SETBIT":    {},
+	"SETEX":     {},
+	"SETNX":     {},
+	"SISMEMBER": {},
+	"SMEMBERS":  {},
+	"TTL":       {},
+	"ZCARD":     {},
+	"ZCOUNT":    {},
+	"SCAN":      {},
+	"SSCAN":     {},
+	"HSCAN":     {},
+	"ZSCAN":     {},
+}
+
+func isIdempotentCommand(cmd string) bool {
+	_, ok := idempotentCommands[strings.ToUpper(cmd)]
+	return ok
+}
+
+var readCommands = map[string]struct{}{
+	"BITCOUNT":             {},
+	"BITPOS":               {},
+	"DBSIZE":               {},
+	"DUMP":                 {},
+	"EXISTS":               {},
+	"GEODIST":              {},
+	"GEOHASH":              {},
+	"GEOPOS":               {},
+	"GEORADIUSBYMEMBER_RO": {},
+	"GEORADIUS_RO":         {},
+	"GET":                  {},
+	"GETBIT":               {},
+	"GETRANGE":             {},
+	"HEXISTS":              {},
+	"HGET":                 {},
+	"HGETALL":              {},
+	"HKEYS":                {},
+	"HLEN":                 {},
+	"HMGET":                {},
+	"HSCAN":                {},
+	"HSTRLEN":              {},
+	"HVALS":                {},
+	"KEYS":                 {},
+	"LINDEX":               {},
+	"LLEN":                 {},
+	"LRANGE":               {},
+	"MEMORY":               {},
+	"MGET":                 {},
+	"OBJECT":               {},
+	"PFCOUNT":              {},
+	"PTTL":                 {},
+	"SCAN":                 {},
+	"SCARD":                {},
+	"SDIFF":                {},
+	"SINTER":               {},
+	"SISMEMBER":            {},
+	"SMEMBERS":             {},
+	"SRANDMEMBER":          {},
+	"SSCAN":                {},
+	"STRLEN":               {},
+	"SUBSTR":               {},
+	"SUNION":               {},
+	"TOUCH":                {},
+	"TTL":                  {},
+	"TYPE":                 {},
+	"ZCARD":                {},
+	"ZCOUNT":               {},
+	"ZLEXCOUNT":            {},
+	"ZRANGE":               {},
+	"ZRANGEBYLEX":          {},
+	"ZRANGEBYSCORE":        {},
+	"ZRANK":                {},
+	"ZREVRANGE":            {},
+	"ZREVRANGEBYLEX":       {},
+	"ZREVRANGEBYSCORE":     {},
+	"ZREVRANK":             {},
+	"ZSCAN":                {},
+	"ZSCORE":               {},
+}
+
+func isReadCommand(command string) bool {
+	_, ok := readCommands[strings.ToUpper(command)]
+	return ok
+}
