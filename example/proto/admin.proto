@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package admin;
+
+option go_package = "/admin";
+
+
+message GetContentParam {
+    int64 id = 1;
+}
+message GetContentResponse {
+    int64 id = 1;
+    string name = 2;
+    string content = 3;
+    string updated_at = 4;
+    string created_at = 5;
+}
+
+service AdminService {
+    rpc BatchGetContent (GetContentParam) returns (GetContentResponse) {}
+}
