@@ -3,7 +3,7 @@ package server
 import (
 	"context"
 	"fmt"
-	"github.com/ymetas/cafe-go/utils"
+	"github.com/ymetas/icafe/utils"
 )
 
 func RunUntilError(ctx context.Context, fns []func(ctx context.Context) error) error {

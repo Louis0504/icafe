@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/ymetas/cafe-go/log"
-	"github.com/ymetas/cafe-go/utils"
+	"github.com/ymetas/icafe/log"
+	"github.com/ymetas/icafe/utils"
 	//nolint:gosec
 	_ "net/http/pprof"
 	"os"

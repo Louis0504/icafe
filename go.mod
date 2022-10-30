@@ -1,4 +1,4 @@
-module github.com/ymetas/cafe-go
+module github.com/ymetas/icafe
 
 go 1.18
 

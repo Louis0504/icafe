@@ -2,10 +2,10 @@ package server
 
 import (
 	"context"
-	"github.com/ymetas/cafe-go/utils"
+	"github.com/ymetas/icafe/utils"
 	"sync"
 
-	"github.com/ymetas/cafe-go/log"
+	"github.com/ymetas/icafe/log"
 )
 
 type Bundle interface {

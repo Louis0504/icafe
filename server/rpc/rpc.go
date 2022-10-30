@@ -3,8 +3,8 @@ package rpc
 import (
 	"context"
 	"github.com/apache/thrift/lib/go/thrift"
-	"github.com/ymetas/cafe-go/log"
-	"github.com/ymetas/cafe-go/server"
+	"github.com/ymetas/icafe/log"
+	"github.com/ymetas/icafe/server"
 	"net/http"
 )
 
