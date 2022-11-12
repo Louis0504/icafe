@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"time"
 	thrift "github.com/apache/thrift/lib/go/thrift"
-	"github.com/ymetas/insight/gen-go/thrift/content_thrift/content"
+	"github.com/ymetas/icafe/example/gen-go/thrift/content_thrift/content"
 
 )
 
