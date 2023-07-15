@@ -8,7 +8,7 @@ import (
 	"github.com/bluele/gcache"
 
 	"github.com/garyburd/redigo/redis"
-	"github.com/ymetas/icafe/cache"
+	"github.com/Louis0504/icafe/cache"
 )
 
 type ZCache struct {

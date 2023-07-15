@@ -3,7 +3,7 @@ package rpc
 import (
 	"context"
 
-	"github.com/ymetas/icafe/example/gen-go/proto/admin"
+	"github.com/Louis0504/icafe/example/gen-go/proto/admin"
 )
 
 type AdminRPC interface {
