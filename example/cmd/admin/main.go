@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/Louis0504/icafe/example/gen-go/proto/admin"
-	"github.com/Louis0504/icafe/example/service"
-	"github.com/Louis0504/icafe/server"
-	"github.com/Louis0504/icafe/server/grpc"
+	"github.com/YLeseclaireurs/icafe/example/gen-go/proto/admin"
+	"github.com/YLeseclaireurs/icafe/example/service"
+	"github.com/YLeseclaireurs/icafe/server"
+	"github.com/YLeseclaireurs/icafe/server/grpc"
 )
 
 func main() {

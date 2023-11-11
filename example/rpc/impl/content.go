@@ -3,8 +3,8 @@ package impl
 import (
 	"context"
 
-	"github.com/Louis0504/icafe/example/gen-go/thrift/content_thrift/content"
-	client "github.com/Louis0504/icafe/server/rpc"
+	"github.com/YLeseclaireurs/icafe/example/gen-go/thrift/content_thrift/content"
+	client "github.com/YLeseclaireurs/icafe/server/rpc"
 	"time"
 )
 

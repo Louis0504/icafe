@@ -2,7 +2,7 @@ package service
 
 import (
 	"context"
-	"github.com/Louis0504/icafe/example/gen-go/proto/admin"
+	"github.com/YLeseclaireurs/icafe/example/gen-go/proto/admin"
 )
 
 type AdminService struct {

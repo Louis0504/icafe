@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/Louis0504/icafe/log"
-	"github.com/Louis0504/icafe/utils"
+	"github.com/YLeseclaireurs/icafe/log"
+	"github.com/YLeseclaireurs/icafe/utils"
 	//nolint:gosec
 	_ "net/http/pprof"
 	"os"

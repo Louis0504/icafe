@@ -13,9 +13,9 @@ import (
 	"strconv"
 	"strings"
 	thrift "github.com/apache/thrift/lib/go/thrift"
-	"github.com/Louis0504/icafe/example/gen-go/thrift/content_thrift/exception"
-	"github.com/Louis0504/icafe/example/gen-go/thrift/content_thrift/base"
-	"github.com/Louis0504/icafe/example/gen-go/thrift/content_thrift/content"
+	"github.com/YLeseclaireurs/icafe/example/gen-go/thrift/content_thrift/exception"
+	"github.com/YLeseclaireurs/icafe/example/gen-go/thrift/content_thrift/base"
+	"github.com/YLeseclaireurs/icafe/example/gen-go/thrift/content_thrift/content"
 )
 
 var _ = exception.GoUnusedProtection__

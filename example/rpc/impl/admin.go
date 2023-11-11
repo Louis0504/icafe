@@ -2,8 +2,8 @@ package impl
 
 import (
 	"context"
-	"github.com/Louis0504/icafe/example/gen-go/proto/admin"
-	"github.com/Louis0504/icafe/server/grpc"
+	"github.com/YLeseclaireurs/icafe/example/gen-go/proto/admin"
+	"github.com/YLeseclaireurs/icafe/server/grpc"
 )
 
 type AdminRPCImpl struct {

@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-	"github.com/Louis0504/icafe/example/gen-go/thrift/content_thrift/base"
-	"github.com/Louis0504/icafe/example/gen-go/thrift/content_thrift/content"
+	"github.com/YLeseclaireurs/icafe/example/gen-go/thrift/content_thrift/base"
+	"github.com/YLeseclaireurs/icafe/example/gen-go/thrift/content_thrift/content"
 )
 
 type ContentService struct {

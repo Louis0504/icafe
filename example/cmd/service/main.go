@@ -2,10 +2,10 @@ package main
 
 import (
 	"github.com/apache/thrift/lib/go/thrift"
-	"github.com/Louis0504/icafe/example/gen-go/thrift/content_thrift/content"
-	"github.com/Louis0504/icafe/example/service"
-	"github.com/Louis0504/icafe/server"
-	"github.com/Louis0504/icafe/server/rpc"
+	"github.com/YLeseclaireurs/icafe/example/gen-go/thrift/content_thrift/content"
+	"github.com/YLeseclaireurs/icafe/example/service"
+	"github.com/YLeseclaireurs/icafe/server"
+	"github.com/YLeseclaireurs/icafe/server/rpc"
 )
 
 func main() {
